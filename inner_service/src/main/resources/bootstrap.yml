@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: innerservice
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        serviceId: config-server
+      failFast: true
+      profile: dev
+      
+encrypt:
+  failOnError: true
+     
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
